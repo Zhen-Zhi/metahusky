@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import { useStateContext } from '../context';
 import { CustomButton } from './';
-import { logo, menu, search, thirdweb } from '../assets';
+import { logo, menu, search, thirdweb, profile } from '../assets';
 import { navlinks } from '../constants';
 
 const Navbar = () => {
@@ -26,7 +26,7 @@ const Navbar = () => {
                 className="flex w-full font-epilogue font-normal text-[14px] placeholder:text-[#4b5264] 
                 text-white bg-transparent outline-none" />
 
-                <div className='w-[72px] h-full rounded-[20px] bg-[#4acd8d] flex justify-center items-center cursor-pointer'>
+                <div className='w-[72px] h-full rounded-[20px] bg-[#1ad5d5] flex justify-center items-center cursor-pointer'>
                     <img src={search} alt="search" className="w-[15px] h-[15px] object-contain"/>
                 </div>
             </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
                 <CustomButton
                     btnType="button"
                     title={address ? 'Create new campaign' : 'Connect wallet'}
-                    styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
+                    styles={address ? 'bg-[#00cfeb]' : 'bg-[#8c6dfd]'}
                     handleClick={() => {
                         if(address) navigate('create-campaign')
                         else 'connect()'
@@ -43,7 +43,7 @@ const Navbar = () => {
                 />
                 <Link to="/">
                     <div className='w-[52px] h-[52px] rounded-full bg-[#2c2f32] flex justify-center items-center cursor-pointer'>
-                        <img src={thirdweb} all="user" className='w-[60%] h-[60%] object-contain' onClick={Navigate} />
+                        <img src={profile} all="user" className='w-[60%] h-[60%] object-contain' onClick={Navigate} />
                     </div>
                 </Link>
             </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
                                     ${isActive === Link.name ? 'grayscale-0' : 'grayscale'}`}
                                 />
                                 <p className={`ml-[20px] font-epilogue font-semibold text-[14px] 
-                                ${isActive === Link.name ? 'text-[#1dc071]' : 'text-[#808191]'}`}>
+                                ${isActive === Link.name ? 'text-[#00cfeb]' : 'text-[#808191]'}`}>
                                     {Link.name}
                                 </p>
                             </li>
@@ -92,7 +92,7 @@ const Navbar = () => {
                         <CustomButton
                             btnType="button"
                             title={address ? 'Create new campaign' : 'Connect wallet'}
-                            styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
+                            styles={address ? 'bg-[#00cfeb]' : 'bg-[#8c6dfd]'}
                             handleClick={() => {
                                 if(address) navigate('create-campaign')
                                 else 'connect()'

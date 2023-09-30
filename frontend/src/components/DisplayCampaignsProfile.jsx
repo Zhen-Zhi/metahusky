@@ -8,7 +8,7 @@ import FundCard4 from './FundCard4';
 import FundCard5 from './FundCard5';
 import { loader } from '../assets';
 
-const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
+const DisplayCampaigns = ({ title, isLoading, campaigns, isButton }) => {
   const navigate = useNavigate();
 
   const handleNavigate = (campaign) => {
@@ -23,7 +23,7 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
         <FundCard5 />
       </div> */}
 
-      <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">{title} ({2})</h1>
+      <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">{title} ({3})</h1>
 
       <div className="flex flex-wrap mt-[20px] gap-[26px]">
         {isLoading && (
@@ -42,9 +42,9 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
           handleClick={() => handleNavigate(campaign)}
         />)}
 
-        {!isLoading && <FundCard2 />}
-        {!isLoading && <FundCard3 />}
-        {!isLoading && <FundCard5 />}
+        {!isLoading && <FundCard showButton={isButton} />}
+        {!isLoading && <FundCard2 showButton={isButton} />}
+        {!isLoading && <FundCard showButton={isButton} />}
       </div>
     </div>
   )

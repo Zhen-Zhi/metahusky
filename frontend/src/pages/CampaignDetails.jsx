@@ -17,7 +17,7 @@ const CampaignDetails = () => {
         <div className="flex-1 flex-col">
           <img src='https://cimg.co/w/articles-attachments/0/611/77a1915252.jpg' alt="campaign" className="w-full h-[410px] object-cover rounded-xl"/>
           <div className="relative w-full h-[5px] bg-[#3a3a43] mt-2">
-            <div className="absolute h-full bg-[#4acd8d]" style={{ width: `${calculateBarPercentage(100, 35)}%`, maxWidth: '100%'}}>
+            <div className="absolute h-full bg-[#1ad5d5]" style={{ width: `${calculateBarPercentage(100, 35)}%`, maxWidth: '100%'}}>
             </div>
           </div>
         </div>
