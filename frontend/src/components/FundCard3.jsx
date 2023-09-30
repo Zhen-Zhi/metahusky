@@ -12,7 +12,7 @@ const FundCard = ({ owner, title, description, target, deadline, amountCollected
   
   return (
     <div className="sm:w-[288px] w-full rounded-[15px] bg-[#1c1c24] cursor-pointer" onClick={Navigate}>
-      <img src='https://th.bing.com/th/id/OIP.fDz_PJmjjkz6huYoetN6pAHaEK?pid=ImgDet&rs=1' alt="fund" className="w-full h-[158px] object-cover rounded-[15px]"/>
+      <img src='https://th.bing.com/th/id/OIP.oxokRcPTUUIWlHBtjpuRcgHaD_?pid=ImgDet&rs=1' alt="fund" className="w-full h-[158px] object-cover rounded-[15px]"/>
 
       <div className="flex flex-col p-4">
         <div className="flex flex-row items-center mb-[18px]">
@@ -21,17 +21,17 @@ const FundCard = ({ owner, title, description, target, deadline, amountCollected
         </div>
 
         <div className="block">
-          <h3 className="font-epilogue font-semibold text-[16px] text-white text-left leading-[26px] truncate">DeFi On Gnosis - Swap</h3>
-          <p className="mt-[5px] font-epilogue font-normal text-[#808191] text-left leading-[18px] truncate">Another desc</p>
+          <h3 className="font-epilogue font-semibold text-[16px] text-white text-left leading-[26px] truncate">Empowering Communities Through Decentralized Education</h3>
+          <p className="mt-[5px] font-epilogue font-normal text-[#808191] text-left leading-[18px] truncate">Empowering Communities Through Decentralized Education</p>
         </div>
 
         <div className="flex justify-between flex-wrap mt-[15px] gap-2">
           <div className="flex flex-col">
-            <h4 className="font-epilogue font-semibold text-[14px] text-[#b2b3bd] leading-[22px]">ETH 3.455</h4>
-            <p className="mt-[3px] font-epilogue font-normal text-[12px] leading-[18px] text-[#808191] sm:max-w-[120px] truncate">Raised of ETH 50.000</p>
+            <h4 className="font-epilogue font-semibold text-[14px] text-[#b2b3bd] leading-[22px]">ETH 13.455</h4>
+            <p className="mt-[3px] font-epilogue font-normal text-[12px] leading-[18px] text-[#808191] sm:max-w-[120px] truncate">Raised of ETH 45.55</p>
           </div>
           <div className="flex flex-col">
-            <h4 className="font-epilogue font-semibold text-[14px] text-[#b2b3bd] leading-[22px]">88</h4>
+            <h4 className="font-epilogue font-semibold text-[14px] text-[#b2b3bd] leading-[22px]">102</h4>
             <p className="mt-[3px] font-epilogue font-normal text-[12px] leading-[18px] text-[#808191] sm:max-w-[120px] truncate">Days Left</p>
           </div>
         </div>

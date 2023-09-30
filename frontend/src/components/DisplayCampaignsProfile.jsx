@@ -17,11 +17,11 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
   
   return (
     <div>
-      <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">Sponsered</h1>
+      {/* <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">Sponsered</h1>
       <div className="flex flex-wrap my-[20px] gap-[26px]">
         <FundCard3 />
         <FundCard5 />
-      </div>
+      </div> */}
 
       <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">{title} ({2})</h1>
 
@@ -42,10 +42,8 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
           handleClick={() => handleNavigate(campaign)}
         />)}
 
-        {!isLoading && <FundCard />}
         {!isLoading && <FundCard2 />}
         {!isLoading && <FundCard3 />}
-        {!isLoading && <FundCard4 />}
         {!isLoading && <FundCard5 />}
       </div>
     </div>
