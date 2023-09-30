@@ -23,7 +23,7 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
         <FundCard5 />
       </div>
 
-      <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">{title} ({2})</h1>
+      <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">{title} ({5})</h1>
 
       <div className="flex flex-wrap mt-[20px] gap-[26px]">
         {isLoading && (

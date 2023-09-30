@@ -10,7 +10,7 @@ const FormField = ({ LabelName, placeholder, inputType, isTextArea, value, handl
             )}
             {isTextArea ? (
                 <textarea
-                    required
+                    // required
                     value={value}
                     onChange={handleChange}
                     row={10}
@@ -20,7 +20,7 @@ const FormField = ({ LabelName, placeholder, inputType, isTextArea, value, handl
                 />
             ) : (
                 <input
-                    required
+                    // required
                     value={value}
                     onChange={handleChange}
                     type={inputType}
